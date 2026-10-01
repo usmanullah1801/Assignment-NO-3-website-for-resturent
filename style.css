@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+}
+
+/* Navigation */
+
+header {
+    background: #111;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Hero */
+
+.hero {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1513104890138-7c749659a591")
+    center/cover;
+}
+
+.hero-content {
+    color: white;
+    max-width: 650px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #e68900;
+}
+
+/* Menu */
+
+.menu-section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.menu-section h2,
+.about h2,
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.food-image {
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.food-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.food-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.food-card h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.food-card button,
+.contact button {
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.food-card button:hover,
+.contact button:hover {
+    background: #e68900;
+}
+
+/* About */
+
+.about {
+    background: #222;
+    color: white;
+    padding: 70px 15%;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Contact */
+
+.contact {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Footer */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
